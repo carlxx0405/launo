@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f3">
+  <title>La UNO — Interior Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span class="scroll-sentinel" aria-hidden="true"></span>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="La UNO, home">
+      <img src="logo-transparent.png" alt="La UNO">
+    </a>
+
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#story">About Us</a>
+      <a href="mailto:hello@example.com">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="header-cta" href="mailto:hello@example.com">
+        Get in touch
+        <span class="arrow-box" aria-hidden="true">↗</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Spaces that<br>feel like you.</h1>
+
+        <div class="hero-bottom">
+          <a class="hero-cta" href="mailto:hello@example.com">
+            Start a project <span aria-hidden="true">↗</span>
+          </a>
+          <p class="hero-description" id="approach">
+            Thoughtful interiors for the way you live. We bring together
+            form, function and personality to create spaces worth spending
+            time in.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-pad" id="projects" aria-labelledby="projects-title">
+      <div class="section-shell">
+        <div class="section-top" data-reveal>
+          <p class="section-label"><span>01</span> / Our projects</p>
+          <p class="section-note">A closer look at our work</p>
+        </div>
+        <div class="projects-heading" data-reveal>
+          <h2 id="projects-title">Spaces with<br><em>a story.</em></h2>
+          <p>Thoughtful spaces, made for the everyday moments that matter.</p>
+        </div>
+        <div class="project-showcase" aria-label="Featured projects" aria-roledescription="carousel" data-reveal>
+          <div class="project-controls" hidden>
+            <span class="project-counter" aria-hidden="true">01 / 03</span>
+            <div class="project-actions">
+              <button class="project-toggle" type="button" aria-label="Pause project carousel">Pause</button>
+              <button class="project-prev" type="button" aria-label="Previous project">←</button>
+              <button class="project-next" type="button" aria-label="Next project">→</button>
+            </div>
+          </div>
+          <p class="sr-only project-status" aria-live="polite" aria-atomic="true"></p>
+          <div class="project-slides">
+            <article class="project-slide" aria-roledescription="slide" aria-label="1 of 3">
+              <figure class="image-frame project-main-image">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A light-filled interior with warm neutral tones" loading="lazy">
+                <figcaption>01 / 03 <span>Residential interiors</span></figcaption>
+              </figure>
+              <figure class="image-frame project-detail-image">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="A thoughtfully furnished interior" loading="lazy">
+              </figure>
+              <div class="project-info">
+                <span class="card-index">A place to slow down</span>
+                <div><h3>The quiet<br><em>residence.</em></h3><p>Soft textures and considered details make room for a quieter kind of everyday.</p></div>
+                <span class="project-info-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+            <article class="project-slide project-slide-alt" aria-roledescription="slide" aria-label="2 of 3" hidden>
+              <figure class="image-frame project-main-image">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A welcoming interior with natural materials" loading="lazy">
+                <figcaption>02 / 03 <span>Residential interiors</span></figcaption>
+              </figure>
+              <figure class="image-frame project-detail-image">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="A bright, contemporary living space" loading="lazy">
+              </figure>
+              <div class="project-info">
+                <span class="card-index">Made for gathering</span>
+                <div><h3>The gathered<br><em>home.</em></h3><p>A warm, welcoming space with room for conversation and connection.</p></div>
+                <span class="project-info-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+            <article class="project-slide project-slide-third" aria-roledescription="slide" aria-label="3 of 3" hidden>
+              <figure class="image-frame project-main-image">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A contemporary interior with a calm palette" loading="lazy">
+                <figcaption>03 / 03 <span>Residential interiors</span></figcaption>
+              </figure>
+              <figure class="image-frame project-detail-image">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="A living room with layered furnishings" loading="lazy">
+              </figure>
+              <div class="project-info">
+                <span class="card-index">Room to make your own</span>
+                <div><h3>The city<br><em>apartment.</em></h3><p>Easy shapes and personal touches bring a sense of calm to city living.</p></div>
+                <span class="project-info-arrow" aria-hidden="true">↗</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story section-pad" id="story" aria-labelledby="story-title">
+      <div class="section-shell">
+        <div class="section-top" data-reveal>
+          <p class="section-label"><span>02</span> / Our story</p>
+          <p class="section-note">A little more about us</p>
+        </div>
+
+        <div class="story-intro">
+          <h2 id="story-title" data-reveal>Good spaces start<br>with <em>people.</em></h2>
+          <div class="story-copy" data-reveal>
+            <p>Home is more than a place. It is the light in the morning, the things you keep close, and the room to be yourself.</p>
+            <p>At La UNO, we listen first. Then we bring together the details that make a space feel considered, comfortable, and distinctly yours.</p>
+          </div>
+        </div>
+
+        <div class="story-grid">
+          <figure class="image-frame story-image" data-reveal>
+            <img data-parallax src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="A warm, light-filled living space" loading="lazy">
+            <figcaption>Spaces for real life <span>01 / 03</span></figcaption>
+          </figure>
+          <div class="story-side">
+            <div class="principle-card" data-reveal>
+              <span class="card-index">THE LA UNO APPROACH</span>
+              <div class="principle-symbol" aria-hidden="true"><span></span><span></span></div>
+              <p>Thoughtful by design.<br><em>Personal by nature.</em></p>
+            </div>
+            <div class="detail-card" data-reveal>
+              <span class="detail-star" aria-hidden="true">✳</span>
+              <p>Beautiful things are even better when they feel like you.</p>
+              <span class="card-index">FORM &nbsp; / &nbsp; FEELING &nbsp; / &nbsp; FUNCTION</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team section-pad" id="team" aria-labelledby="team-title">
+      <div class="section-shell">
+        <div class="section-top" data-reveal>
+          <p class="section-label"><span>03</span> / Our team</p>
+          <p class="section-note">The people behind the spaces</p>
+        </div>
+        <div class="team-heading">
+          <h2 id="team-title" data-reveal>A shared eye for<br><em>the details.</em></h2>
+          <p data-reveal>Different perspectives, one common thread: a belief that the best spaces feel as good as they look.</p>
+        </div>
+        <div class="team-carousel-header" data-reveal>
+          <span>Meet the team <span aria-hidden="true">↗</span></span>
+          <button class="team-carousel-toggle" type="button" aria-controls="team-carousel" hidden>Pause</button>
+        </div>
+        <div class="team-carousel" id="team-carousel" tabindex="0" aria-label="Team profiles" data-reveal>
+          <div class="team-track">
+            <div class="team-group">
+              <article class="team-card">
+                <div class="avatar avatar-one"><img src="https://api.dicebear.com/10.x/notionists/svg?seed=LaunoCreative" alt="" width="128" height="128" loading="lazy"></div>
+                <div class="team-card-info"><div><h3>Creative direction</h3><p>Vision &amp; perspective</p></div><span>01</span></div>
+              </article>
+              <article class="team-card">
+                <div class="avatar avatar-two"><img src="https://api.dicebear.com/10.x/notionists/svg?seed=LaunoDesign" alt="" width="128" height="128" loading="lazy"></div>
+                <div class="team-card-info"><div><h3>Interior design</h3><p>Spaces &amp; stories</p></div><span>02</span></div>
+              </article>
+              <article class="team-card">
+                <div class="avatar avatar-three"><img src="https://api.dicebear.com/10.x/notionists/svg?seed=LaunoStyling" alt="" width="128" height="128" loading="lazy"></div>
+                <div class="team-card-info"><div><h3>Project styling</h3><p>Materials &amp; moments</p></div><span>03</span></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section-pad" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="section-shell">
+        <div class="section-top" data-reveal>
+          <p class="section-label"><span>04</span> / What customers say</p>
+          <p class="section-note">A space for your stories</p>
+        </div>
+        <div class="reviews-experience">
+          <div class="testimonials-heading" data-reveal>
+            <h2 id="testimonials-title">The best part?<br><em>How it feels.</em></h2>
+            <p>Every space has a story. Here is where we will share the words of the people who live in them.</p>
+            <span class="reviews-hint" aria-hidden="true">Scroll to discover <span>↓</span></span>
+          </div>
+          <div class="reviews-stage">
+            <div class="reviews-stack">
+              <div class="review-slot">
+                <article class="quote-card">
+                  <div class="quote-top"><span class="quote-mark" aria-hidden="true">“</span><span class="quote-rating" aria-label="5 out of 5 stars">★★★★★</span></div>
+                  <blockquote>It feels like us, only better than we imagined.</blockquote>
+                  <div class="quote-credit"><span>Customer 01</span><span>01 / 05</span></div>
+                </article>
+              </div>
+              <div class="review-slot">
+                <article class="quote-card quote-card-alt">
+                  <div class="quote-top"><span class="quote-mark" aria-hidden="true">“</span><span class="quote-rating" aria-label="5 out of 5 stars">★★★★★</span></div>
+                  <blockquote>Every detail feels thoughtful, and every room feels like home.</blockquote>
+                  <div class="quote-credit"><span>Customer 02</span><span>02 / 05</span></div>
+                </article>
+              </div>
+              <div class="review-slot">
+                <article class="quote-card quote-card-rose">
+                  <div class="quote-top"><span class="quote-mark" aria-hidden="true">“</span><span class="quote-rating" aria-label="5 out of 5 stars">★★★★★</span></div>
+                  <blockquote>They understood how we wanted to live, not just how we wanted it to look.</blockquote>
+                  <div class="quote-credit"><span>Customer 03</span><span>03 / 05</span></div>
+                </article>
+              </div>
+              <div class="review-slot">
+                <article class="quote-card quote-card-blue">
+                  <div class="quote-top"><span class="quote-mark" aria-hidden="true">“</span><span class="quote-rating" aria-label="5 out of 5 stars">★★★★★</span></div>
+                  <blockquote>Our favourite place to be is finally our own home.</blockquote>
+                  <div class="quote-credit"><span>Customer 04</span><span>04 / 05</span></div>
+                </article>
+              </div>
+              <div class="review-slot">
+                <article class="quote-card quote-card-cream">
+                  <div class="quote-top"><span class="quote-mark" aria-hidden="true">“</span><span class="quote-rating" aria-label="5 out of 5 stars">★★★★★</span></div>
+                  <blockquote>There is a little moment to love in every corner.</blockquote>
+                  <div class="quote-credit"><span>Customer 05</span><span>05 / 05</span></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-pad" aria-labelledby="closing-title">
+      <div class="section-shell closing-inner" data-reveal>
+        <p class="section-label">Your place, your story</p>
+        <h2 id="closing-title">Let's make room<br>for <em>you.</em></h2>
+        <a class="hero-cta closing-cta" href="mailto:hello@example.com">Start a project <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="section-shell">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="footer-logo" href="#home" aria-label="La UNO, home">
+          <img src="no-word-logo.png" alt="La UNO">
+        </a>
+        <p>Spaces that feel like you.</p>
+        <nav class="footer-socials" aria-label="Social media">
+          <a href="https://www.tiktok.com/" aria-label="TikTok (platform homepage)"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/tiktok.svg" alt="" width="18" height="18"></a>
+          <a href="https://www.whatsapp.com/" aria-label="WhatsApp (platform homepage)"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/whatsapp.svg" alt="" width="18" height="18"></a>
+          <a href="https://www.facebook.com/" aria-label="Facebook (platform homepage)"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/facebook.svg" alt="" width="18" height="18"></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram (platform homepage)"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v14/icons/instagram.svg" alt="" width="18" height="18"></a>
+        </nav>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <p class="footer-heading">Explore</p>
+        <a href="#projects">Our projects</a>
+        <a href="#story">Our story</a>
+        <a href="#team">Our team</a>
+        <a href="#testimonials">Kind words</a>
+      </nav>
+      <div class="footer-contact">
+        <p class="footer-heading">Have a space in mind?</p>
+        <p>We'd love to hear about it.</p>
+        <a href="mailto:hello@example.com">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>La UNO Interior Design</span>
+      <span class="footer-origin"><span class="footer-origin-mark" aria-hidden="true"><i></i><i></i><i></i></span>Proudly Malawian</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
